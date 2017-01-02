@@ -364,6 +364,9 @@
 					resource.timing.loadEventEnd);
 
 				BOOMR.addVar("restiming", JSON.stringify(r));
+
+				// Adds a lot to the final payload we don't care about right now.
+				BOOMR.removeVar("restiming");
 			}
 
 			// If the resource has an onComplete event, trigger it.

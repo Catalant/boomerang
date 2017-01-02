@@ -880,6 +880,8 @@ see: http://www.w3.org/TR/resource-timing/
 					restiming: JSON.stringify(r)
 				});
 			}
+			// Adds a lot to the final payload we don't care about right now.
+			BOOMR.removeVar("restiming");
 
 			this.complete = true;
 			this.sentNavBeacon = true;

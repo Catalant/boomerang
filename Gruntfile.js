@@ -69,7 +69,7 @@ module.exports = function() {
 	var pkg = grunt.file.readJSON("package.json");
 	var buildNumber = grunt.option("buildNumber") || 0;
 	var releaseVersion = pkg.releaseVersion + "." + buildNumber;
-	var buildDate = Math.round(Date.now() / 1000);
+	var buildDate = 0; //Math.round(Date.now() / 1000);
 	var boomerangVersion = releaseVersion + "." + buildDate;
 
 	//
